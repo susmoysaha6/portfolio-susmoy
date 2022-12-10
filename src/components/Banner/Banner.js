@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div id='#home' className='my-10'>
+        <div id='home' className='my-10'>
             <div className="shadow-2xl">
                 <div className="flex flex-col md:flex-row justify-evenly items-center">
                     <div>
