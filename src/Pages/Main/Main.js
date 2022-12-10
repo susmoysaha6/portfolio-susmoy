@@ -3,6 +3,7 @@ import Banner from '../../components/Banner/Banner';
 import ContactMe from '../../components/ContactMe/ContactMe';
 import Headers from '../../components/Headers/Headers';
 import Projects from '../../components/Projects/Projects';
+import Skills from '../../components/Skills/Skills';
 
 
 const Main = () => {
@@ -10,6 +11,7 @@ const Main = () => {
         <div>
             <Headers />
             <Banner />
+            <Skills />
             <Projects />
             <ContactMe />
         </div>

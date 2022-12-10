@@ -17,7 +17,7 @@ const ContactMe = () => {
         e.target.reset();
     };
     return (
-        <div id='contact' className='mt-20 mb-36 shadow-2xl p-10'>
+        <div id='contact' className='mt-20 mb-36 shadow-2xl p-10 w-11/12 mx-auto'>
             <h1 className='text-center text-3xl uppercase my-10'>Contact Me</h1>
             <form className='grid grid-cols-2 gap-5' ref={form} onSubmit={sendEmail}>
 
