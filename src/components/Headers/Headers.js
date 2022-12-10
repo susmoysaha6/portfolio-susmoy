@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaDownload } from "react-icons/fa";
 
 const Headers = () => {
     return (
@@ -33,7 +34,7 @@ const Headers = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a target='blank' href='https://drive.google.com/file/d/1OLSdPLQ_AgEQsFAJrjuHtmEm1O0iY8LQ/view?usp=share_link' className="btn">Download Resume</a>
+                    <a target='blank' href='https://drive.google.com/file/d/1OLSdPLQ_AgEQsFAJrjuHtmEm1O0iY8LQ/view?usp=share_link' className="btn"><FaDownload className='mr-2' /> Resume</a>
                 </div>
             </div>
         </div>
