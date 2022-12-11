@@ -43,9 +43,9 @@ const Projects = () => {
             <h1 className='text-center text-3xl font-bold my-10 uppercase'>Projects</h1>
             <div className='grid md:grid-cols-2 lg:grid-cols-3  gap-4 '>
                 {
-                    projects.map(project => <div key={project.id} className="card border-1 bg-slate-900 shadow-xl">
+                    projects.map(project => <div key={project.id} className="card  bg-slate-900 shadow-2xl">
                         <div className='h-1/2' >
-                            <figure className='h-48'><img src={project.img} alt="car!" /></figure>
+                            <figure className='h-48 rounded'><img className='' src={project.img} alt="car!" /></figure>
                         </div>
                         <div className="card-body">
                             <h2 className="card-title">{project.name}</h2>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaFacebook, FaLinkedin, FaGithubSquare, FaFacebookSquare } from "react-icons/fa";
 const Banner = () => {
     return (
         <div id='home' className='my-10 w-11/12 mx-auto'>
@@ -27,13 +27,13 @@ const Banner = () => {
 
                         <div className='my-10 flex justify-between'>
                             <a className='text-3xl' target='blank' href="https://github.com/susmoysaha6">
-                                <FaGithub />
+                                <FaGithubSquare />
                             </a>
                             <a className='text-3xl' target='blank' href="https://www.linkedin.com/in/susmoy-saha-b150a5183/">
                                 <FaLinkedin />
                             </a>
                             <a className='text-3xl' target='blank' href="https://www.facebook.com/susmoys/">
-                                <FaFacebook />
+                                <FaFacebookSquare />
                             </a>
                         </div>
 
