@@ -2,7 +2,7 @@ import React from 'react';
 import { FaDownload } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
-const Headers = () => {
+const SecondHeader = () => {
     return (
         <div className='sticky top-0 z-50'>
             <div className="navbar bg-base-100 w-11/12 mx-auto ">
@@ -13,13 +13,7 @@ const Headers = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             <li><Link to='/' >HOME</Link></li>
-                            <li><a href='#skill'>SKILLS</a></li>
-                            <li>
-                                <a href="#projects">PROJECTS</a>
-                            </li>
                             <li><Link to='/blogs' >BLOGS</Link></li>
-                            <li><a href='#about'>ABOUT ME</a></li>
-                            <li><a href='#contact'>CONTACT ME</a></li>
                         </ul>
                     </div>
                     <Link to='/' className="btn btn-ghost normal-case text-xl">SUSMOY SAHA</Link>
@@ -27,13 +21,7 @@ const Headers = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <li><Link to='/' >HOME</Link></li>
-                        <li><a href='#skill'>SKILLS</a></li>
-                        <li>
-                            <a href="#projects">PROJECTS</a>
-                        </li>
                         <li><Link to='/blogs' >BLOGS</Link></li>
-                        <li><a href='#about'>ABOUT ME</a></li>
-                        <li><a href='#contact'>CONTACT ME</a></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
@@ -44,4 +32,4 @@ const Headers = () => {
     );
 };
 
-export default Headers;
+export default SecondHeader;
