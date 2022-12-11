@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData, useNavigation, useParams } from 'react-router-dom';
+import { Link, useLoaderData, useNavigation, useParams } from 'react-router-dom';
 
 const ProjectDetails = () => {
     const { id } = useParams();
@@ -14,11 +14,12 @@ const ProjectDetails = () => {
 
 
     return (
-        <div className='w-11/12 mx-auto'>
+        <div className='w-11/12 mx-auto my-10'>
+            <Link to='/' className='btn btn-info my-10 w-full'>Back to Home</Link>
             <h3>{name}</h3>
             <div className='grid grid-cols-3 gap-5'>
                 {
-                    imgs?.map((img, i) => <img className='h-56' key={i} src={img} alt="" />)
+                    imgs?.map((img, i) => <img className='h-56 hover:animate-pulse' key={i} src={img} alt="" />)
                 }
             </div>
             <div className='flex justify-between my-20'>
@@ -26,6 +27,13 @@ const ProjectDetails = () => {
                 <a target="blank" href={gitClient}>Client Side Link </a>
                 <a target="blank" href={gitServer}>Server Side Link</a>
             </div>
+            <ul className='px-20' style={{ listStyle: 'disc' }}>
+                {
+                    feature?.map((f, i) =>
+                        <li key={i}>{f}</li>
+                    )
+                }
+            </ul>
         </div>
     );
 };
