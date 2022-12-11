@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const projects = [
     {
@@ -60,7 +61,7 @@ const Projects = () => {
                                     project?.feature?.map((f, i) => <li key={i}>  {f}</li>)
                                 }
                             </ul>
-                            <button className='btn btn-info'>Details</button>
+                            <Link to={`/project/${project.id}`} className='btn btn-info'>Details</Link>
                         </div>
                     </div>)
                 }
